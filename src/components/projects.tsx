@@ -1,4 +1,4 @@
-import { title } from "framer-motion/client";
+// import { title } from "framer-motion/client";
 import Card from "./card";
 // import projectImg1 from "../assets/projects/projectImg1.png";
 
