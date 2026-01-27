@@ -1,0 +1,608 @@
+%-------------------------
+% Resume in Latex
+% Author : Abey George
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+\usepackage{CormorantGaramond}
+\usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape MD. RAKIBUL HAQUE} \\ \vspace{1pt}
+    Mirpur 12, Dhaka, Bangladesh \\ \vspace{1pt}
+    \small \href{tel:+xxxxxxxxxxxx}{ \raisebox{-0.1\height}\faPhone\ \underline{+88-01711309969} ~} \href{mailto:remon.rakibul.star@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{remon.rakibul.star@gmail.com}} ~ 
+    \href{https://linkedin.com/in/remon-rakibul}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{remon-rakibul}}  ~
+    \href{https://github.com/remon-rakibul}{\raisebox{-0.2\height}\faGithub\ \underline{remon-rakibul}} ~
+    \href{https://portfolio-remon-rakibuls-projects.vercel.app/}{\raisebox{-0.2\height}\faGlobe\ \underline{Portfolio}} ~
+    %\href{https://www.hackerrank.com/yourid}{\raisebox{-0.2\height}\faHackerrank\ \underline{yourid}} ~
+    %\href{https://codeforces.com/profile/yourid}{\raisebox{-0.2\height}\faPoll\ \underline{yourid}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {European University of Bangladesh}{
+      % 2018 -- 
+      2022}
+      {Bsc in Computer Science and Engineering
+ % - \textbf{CGPA} - \textbf{3.47}
+ }
+ {Dhaka, Bangladesh}
+  \resumeSubHeadingListEnd
+
+    \resumeSubHeadingListStart
+    \resumeSubheading
+      {Udacity}{
+      % 01 2018 -- 
+      2018}
+      {Data Foundation Nanodegree}{Emeryville, California, USA}
+  \resumeSubHeadingListEnd
+  
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Satkhira Polytechnic Institute}{
+      % 2012 -- 
+      2018}
+      {Diploma in Engineering in Computer Science and Engineering
+ % - \textbf{CGPA} - \textbf{2.75}
+ }
+ {Satkhira, Bangladesh}
+  \resumeSubHeadingListEnd
+  
+  
+ % \resumeSubHeadingListStart
+  %  \resumeSubheading
+   %   {Satkhira P.N High School}{2012}
+    %  {SSC - Science \textbf{GPA} - \textbf{4.63}}{Satkhira, Bangladesh}
+  %\resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+% \section{COURSEWORK / SKILLS}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-2pt, parsep=5pt]
+%                 \item Data Structures \& Algorithms
+%                 \item Operating Systems
+%                 \item Network Security
+%                 \item Database Management System (DBMS)
+%                 \item Artificial Intelligence
+%                 \item OOPS Concept
+%                 \item Web Development
+%                 \item Android Development
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+%     %\resumeSubHeadingListEnd
+
+
+%-----------Publications---------------
+\section{PUBLICATIONS}
+  
+   \resumeSubHeadingListStart
+    \resumeSubheading
+      {\href{https://arxiv.org/abs/2210.13882}{A deep learning approach for brain tumor detection using magnetic resonance imaging}\href{https://arxiv.org/abs/2210.13882}{\raisebox{-0.1\height}\faExternalLink }}\\
+      {International Journal of Electrical and Computer Engineering (IJECE)
+ - \textbf{2022-10-25}}\\
+  \resumeSubHeadingListEnd 
+
+
+
+\vspace{-7pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\normalsize{OS:}}{ \normalsize{Linux, Mac, Windows}} \\
+     \textbf{\normalsize{Languages:}}{ \normalsize{Python, JavaScript, SQL}} \\
+     \textbf{\normalsize{Frontend:}}{ \normalsize{HTML, CSS, Bootstrap, JavaScript, React}} \\
+     \textbf{\normalsize{Backend:}}{ \normalsize{Django Rest Framework (DRF), FastAPI}} \\
+     \textbf{\normalsize{Database:}}{ \normalsize{Postgres, PGvector, Pinecone, Chromadb, Supabase}} \\
+     \textbf{\normalsize{Generative AI:}}{ \normalsize{Langraph, Langchain, CrewAI, Agency-Swarm, RAG, Context Engineering, Fine-tuning}} \\
+     \textbf{\normalsize{ML/DL:}}{ \normalsize{Scikit-learn, Keras, Tensorflow, NLTK, Spacy, Opencv, Numpy, Pandas, Matplotlib, Seaborn}} \\
+     \textbf{\normalsize{Developer Tools:}}{ \normalsize{Cursor, Vibe Engineering, VS Code, Spyder, Jupyter Notebook, Git, Postman}} \\
+     \textbf{\normalsize{Cloud:}}{\normalsize{ Docker, Github Actions, AWS EC2}} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+
+
+
+%-----------EXPERIENCE-----------
+\section{WORK EXPERIENCE}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+      {Recom\href{https://recombd.com/}{\raisebox{-0.1\height}\faExternalLink }}{01 2025 -- Present} 
+      {\underline{AI Engineer}}{Dhaka, Bangladesh}
+      % \hspace{0.4}
+     \resumeItemListStart
+        \resumeItem{\normalsize{Designed and deployed Agentic Rag and tool calling Agent for HRMS software.}}
+        \resumeItem{\normalsize{Designed and deployed full-stack agentic systems for HR technology solutions.}}
+        \resumeItem{\normalsize{Developed AI-driven payroll automation systems, integrating gen AI to streamline payroll management.}}
+        \resumeItem{\normalsize{Deployed and maintained end-to-end agentic platforms on AWS, ensuring scalability and high availability.}}
+        
+        \vspace{-13pt}
+    % Projects Section
+    \resumeProjectHeading
+      {\textbf{\large{Individual Development Plan Agent}} $|$ \large{\underline{OpenAI API, Langgraph, Fastapi, PostgreSQL, Angular, AWS}}}{}
+      \vspace{-6pt}
+      \resumeItemListStart
+        \resumeItem{\normalsize{A full-stack agentic system that helps users advance from their current role to their desired position.}}
+        \resumeItem{\textcolor{accent}{\href{https://drive.google.com/file/d/1mMW5MFTh5xIr36VLWU8HJ61wQ5U9PpK2/view?usp=sharing}{\underline{\normalsize{View Demo here}}}}}
+      \resumeItemListEnd
+
+        \vspace{6pt}
+      {\textbf{\large{Job Description Agent}} $|$ \large{\underline{OpenAI API, Langgraph, Fastapi, PostgreSQL, Angular, AWS}}}{}
+      % \vspace{-6pt}
+      \resumeItemListStart
+        \resumeItem{\normalsize{An AI platform that automates and standardizes company-specific job descriptions.}}
+        \resumeItem{\textcolor{accent}{\href{https://drive.google.com/file/d/1JuB0WDGrPiNgLekQAky6ojGO3qBvrLW0/view?usp=sharing}{\underline{\normalsize{View Demo here}}}}}
+      \resumeItemListEnd
+      
+      \resumeItemListEnd
+     
+    \vspace{2pt}
+
+    \resumeSubheading
+     {Appsinception \href{https://appsinception.com/}{\raisebox{-0.1\height}\faExternalLink }}{11 2024 -- 12 2024} 
+     {\underline{Software Engineer}}{Remote}
+     \resumeItemListStart
+        \resumeItem{\normalsize{Developed RESTful APIs with Django Rest Framework (DRF) for seamless backend functionality.}}
+        \resumeItem{\normalsize{Implemented multi-agent systems with Agency-Swarm, enabling efficient creation and management of tools, agents, multi-agent teams, and widgets via the API.}}
+        \resumeItem{\normalsize{Conducted rigorous debugging and testing to ensure API reliability, performance, and smooth deployment.}}
+        
+        \vspace{-13pt}
+    % Projects Section
+    \resumeProjectHeading
+      {\textbf{\large{AI Agent Widget}} $|$ \large{\underline{OpenAI API, Agency-Swarm, DRF, PostgreSQL}}}{}
+      \vspace{-6pt}
+      \resumeItemListStart
+        \resumeItem{\normalsize{An Agentic platform enabling users to sign up, create tools, agents, teams, and widgets, integrate payment systems, and generate embed codes for deploying chatbots seamlessly.}}
+        \resumeItem{\textcolor{accent}{\href{https://chatbot.appsinception.com/}{\underline{\normalsize{Live site here}}}}}
+        \resumeItem{\textcolor{accent}{\href{https://www.codester.com/items/53232/ai-agent-widget-chat-support-platform-python}{\underline{\normalsize{Listed on codester}}}}}
+      \resumeItemListEnd
+      
+      \resumeItemListEnd
+      
+    
+
+    
+   \resumeSubheading
+     {AriSaf Tech Ltd \href{https://arisaftech.com/}{\raisebox{-0.1\height}\faExternalLink }}{04 2023 -- 10 2024} 
+     {\underline{Jr AI Engineer}}{Dhaka, Bangladesh}
+     % \hspace{0.4}
+     \resumeItemListStart
+        \resumeItem{\normalsize{Engaged with ARChat, a sophisticated LLM chatbot, contributing to its development and optimization.}}
+        % \resumeItem{\normalsize{Worked on notable AI-based projects such as cv-sorting, AutoHR.}}
+        \resumeItem{\normalsize{Performed various AI Proof of Concept (PoC) initiatives to explore and showcase cutting-edge tech feasibility.}}
+        \resumeItem{\normalsize{Engaged in research and development focusing on Natural Language Processing (NLP) for AI projects.}}
+        \resumeItem{\normalsize{Conducting extensive R\&D to integrate emerging technologies and drive product innovation.}}
+        \resumeItem{\normalsize{Building and managing APIs with DRF and FastAPI for optimized backend services.}}
+
+        \vspace{-13pt}
+    % Projects Section
+    \resumeProjectHeading
+      {\textbf{\large{ARChat}} $|$ \large{\underline{Openai API, Langchain, SupabaseDB, Fastapi}}}{}
+      \vspace{-5pt}
+      \resumeItemListStart
+        {\resumeItem{\normalsize{A RAG-based platform enabling users to create multiple chatbots, each with its own dedicated knowledge base for enhanced functionality and customization.}}}
+        \resumeItem{\textcolor{accent}{\href{https://arc-chat.vercel.app/}{\underline{\normalsize{Live site here}}}}}
+      \resumeItemListEnd
+      
+      \resumeItemListEnd
+      
+      
+    % \resumeItemListEnd 
+
+    % \resumeSubheading
+    %  {Poridhi \href{https://poridhi.io/}{\raisebox{-0.1\height}\faExternalLink }}{01 2022 -- 01 2023} 
+    %  {\underline{Teaching Assistant}}{Dhaka, Bangladesh}
+    %  \resumeItemListStart
+    %    \resumeItem{\normalsize{Write blogs about various technological topics}}
+    %    \resumeItem{\normalsize{Assist Teachers in various courses}}
+    %    \resumeItem{\normalsize{Assist Students in coding assignments}}
+    %  \resumeItemListEnd
+
+    % \resumeSubheading
+    %  {Agemark Technology Ltd \href{certificate Link}{\raisebox{-0.1\height}\faExternalLink }}{08 2022 -- 11 2022} 
+    %  {\underline{Software Support Engineer}}{Dhaka, Bangladesh}
+    %  \resumeItemListEnd 
+
+    \resumeSubheading
+      {Headblocks \href{http://www.head-blocks.com/}{\raisebox{-0.1\height}\faExternalLink }}{04 2019 -- 05 2020} 
+      {\underline{Junior Machine Learning Engineer}}{Dhaka, Bangladesh}
+      \hspace{0.4}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Collaborated on a team project leveraging IBM's WKS, under the supervision of IBM professionals.}}
+        \resumeItem{\normalsize{Led research and development for Named Entity Recognition (NER) tailored for resumes.}}
+        \resumeItem{\normalsize{Developed a sophisticated model capable of identifying various entities within resumes.}}
+        % \resumeItem{\normalsize{Worked on a team project "AI scoring system" with Watson Knowledge Studio under the supervision of IBM}}
+        \resumeItem{\normalsize{Processed and annotated a large resume corpus to train and refine the NER model.}}
+    \resumeItemListEnd  
+      
+  \resumeSubHeadingListEnd
+\vspace{-7pt}
+
+ %-----------CERTIFICATIONS---------------
+% \section{CERTIFICATIONS}
+
+% $\sbullet[.75] \hspace{0.1cm}$ {\href{https://www.datacamp.com/statement-of-accomplishment/track/57e8bc553fda8ff814c0dce9746908ec7fe2d050}{Python programming track - DataCamp}} \hspace{4.2cm}
+% $\sbullet[.75] \hspace{0.2cm}${\href{https://www.coursera.org/account/accomplishments/verify/5K23VWTSJGVD} {Introduction to Machine Learning - Coursera}}\\
+% $\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{Data Science \& Machine Learning With Python - Skill Jobs}} \hspace{0.9cm}
+% $\sbullet[.75] \hspace{0.2cm}${\href{https://stepik.org/certificate/aa282feff8da6d78faed8b590299d3001d167e3f.pdf}{JavaScript for beginners - Stepik}} \\
+% $\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{3 months course on Artiﬁcial Intelligence - LICT}} \hspace{2.8cm}
+% $\sbullet[.75] \hspace{0.2cm}${\href{https://www.coursera.org/account/accomplishments/verify/BQ6X2VGVU4NA}{Programming for Everybody - Coursera}} \hspace{0.5cm}
+% $\sbullet[.75] \hspace{0.2cm}${\href{https://www.coursera.org/account/accomplishments/verify/8DK5UXS4S3ZP}{Interactivity with JavaScript - Coursera}} \\
+% \vspace{-9pt}
+
+
+
+% -----------PROJECTS-----------
+\vspace{-11pt}
+\section{OPEN SOURCE PROJECTS}
+    \vspace{5pt}
+    \resumeSubHeadingListStart
+       % \resumeProjectHeading
+       %    {\textbf{\large{AI Agent Widget}} $|$ \large{\underline{Openai API, Agency-swarm, DRF, Postgresql}}}{}
+       %    % \hspace{1}
+       %    \resumeItemListStart
+       %      \resumeItem{\normalsize{Designed and implemented the backend architecture of the Platform, ensuring scalable, efficient, and secure operations.}}
+       %      % \resumeItem{\normalsize{Optimized RAG based QA}}
+
+       %      % \resumeItem
+       %      {\textcolor{accent} {\href{https://chatbot.appsinception.com/en} {\underline{\normalsize{Live site here}}}}}
+       %    \resumeItemListEnd 
+       %    \vspace{-15pt}
+          
+       % \resumeProjectHeading
+       %    {\textbf{\large{ARChat}} $|$ \large{\underline{Openai API, Langchain, SupabaseDB, Python}}}{}
+       %    % \hspace{1}
+       %    \resumeItemListStart
+       %      \resumeItem{\normalsize{Custom chatbot creation with multiple knowledgebase}}
+       %      \resumeItem{\normalsize{Optimized RAG based QA}}
+
+       %      % \resumeItem
+       %      {\textcolor{accent} {\href{https://arc-chat.vercel.app/} {\underline{\normalsize{Live site here}}}}}
+       %    \resumeItemListEnd 
+          \vspace{-11pt}
+
+        \resumeProjectHeading
+          {\href{https://pypi.org/project/langgraph-node-streamer/}{\textbf{\large{{LangGraph Node-Level Streamer}}} \href{https://pypi.org/project/langgraph-node-streamer/}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Langgraph, Python}}}{}
+          \vspace{-13pt}
+          \resumeItemListStart
+            \resumeItem{\normalsize{A PyPi package that streams at node level at langgraph}}
+            \resumeItem{\normalsize{Supports tool calling while streaming}}
+          \resumeItemListEnd
+        \vspace{-18pt}
+        \resumeProjectHeading
+          {\href{https://github.com/remon-rakibul/sql-rag-fastapi-backend}{\textbf{\large{{SQL-RAG Combined Agent FastAPI Backend}}} \href{https://github.com/remon-rakibul/sql-rag-fastapi-backend}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Langgraph, fastapi, postgresql, pgvector, docker}}}{}
+          \vspace{-13pt}
+          \resumeItemListStart
+            \resumeItem{\normalsize{A production ready Sql combined agentic rag with fastapi backend}}
+          \resumeItemListEnd
+\vspace{-18pt}
+        \resumeProjectHeading
+          {\href{https://github.com/remon-rakibul/agentic-rag-fastapi-backend}{\textbf{\large{{SQL Agent FastAPI Backend}}} \href{https://github.com/remon-rakibul/agentic-rag-fastapi-backend}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Langgraph, fastapi, PostgreSQL, SQLite, docker}}}{}
+          \vspace{-13pt}
+          \resumeItemListStart
+            \resumeItem{\normalsize{A production ready SQL Agent with fastapi backend}}
+          \resumeItemListEnd
+\vspace{-18pt}
+        \resumeProjectHeading
+          {\href{https://github.com/remon-rakibul/agentic-rag-fastapi-backend}{\textbf{\large{{Agentic RAG FastAPI Backend}}} \href{https://github.com/remon-rakibul/agentic-rag-fastapi-backend}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Langgraph, fastapi, postgresql, pgvector, docker}}}{}
+          \vspace{-13pt}
+          \resumeItemListStart
+            \resumeItem{\normalsize{A production ready Agentic RAG with fastapi backend}}
+          \resumeItemListEnd
+\vspace{-18pt}
+        \resumeProjectHeading
+          {\href{https://github.com/remon-rakibul/autonomous-hr}{\textbf{\large{{AutoHR}}} \href{https://github.com/remon-rakibul/autonomous-hr}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Llama3.1, Langgraph, CrewAI, Langchain-tools, GmailAPI, Python}}}{}
+          \vspace{-13pt}
+          \resumeItemListStart
+            \resumeItem{\normalsize{An autonomous multi-agent system to automate most of the workflow of an HR Persona}}
+            \resumeItem{\normalsize{Can automatically pull, research, and draft email responses in gmail}}
+          \resumeItemListEnd 
+          % \vspace{-15pt}
+
+
+        % \resumeProjectHeading
+        %   {\textbf{\large{CV-Sorting}} $|$ \large{\underline{Openai API, Langchain, PineconeDB, Python}}}{}
+        %   % \hspace{1}
+        %   \resumeItemListStart
+        %     \resumeItem{\normalsize{A POC on sorting resumes against a job description with relevance scoring}}
+        %   \resumeItemListEnd 
+        %   \vspace{-15pt}
+
+    \vspace{-18pt}
+       \resumeProjectHeading
+          {\href{https://github.com/remon-rakibul/AI-Study-Buddy}{\textbf{\large{{AI Study Buddy}}} \href{https://github.com/remon-rakibul/AI-Study-Buddy}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Openai API, Langchain, Chroma DB, Streamlit, Python}}}{}
+          % \hspace{1}
+          \vspace{-13pt}
+          \resumeItemListStart
+            \resumeItem{\normalsize{A Question Generation and answering platform for students and teachers}}
+            \resumeItem{\normalsize{Given any number of PDF AI will generate questions based on the documents provided}}
+            \resumeItem{\normalsize{User can submit URL, Youtube video link, along with pdf documents}}
+            \resumeItem{\normalsize{User can select questions and AI will generate answers to the question from the documents}}
+            \resumeItem{\normalsize{User can see the source from which the question has been answered}}
+            \resumeItem{\normalsize{User can generate a summary of the document}}
+
+            % \resumeItem
+            {\textcolor{accent} {\href{https://ai-study-buddy-qxb2jcy4zaqmzcuuryedhl.streamlit.app/} {\underline{\normalsize{Live site here}}}}}
+          \resumeItemListEnd 
+          \vspace{-18pt}
+
+        \resumeProjectHeading
+          {\href{https://github.com/remon-rakibul/chatbot-demo-api}{\textbf{\large{{Chatbot AI  Backend}}} \href{https://github.com/remon-rakibul/chatbot-demo-api}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{GPT-3.5Turbo16k, langchain, fastapi, PineconeDB, Python}}}{}
+          % \hspace{1}
+          \vspace{-13pt}
+          \resumeItemListStart
+            \resumeItem{\normalsize{An API for the backend of a rag chatbot}}
+            \resumeItem{\normalsize{User can upload docx,pdf,pptx document and chat with it}}
+          \resumeItemListEnd 
+          \vspace{-18pt}
+
+        \resumeProjectHeading
+          {\href{https://github.com/remon-rakibul/resume-categorization-ml}{\textbf{\large{{Resume Categorizer}}} \href{https://github.com/remon-rakibul/resume-categorization-ml}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{numpy, pandas, matplotlib, seaborn, scikit-learn, Python}}}{}
+          % \hspace{1}
+          \vspace{-13pt}
+          \resumeItemListStart
+            \resumeItem{\normalsize{A ml model that chat categorize resumes to different sub-domains (ex. HR, ARTS, etc)}}
+          \resumeItemListEnd 
+          \vspace{-18pt}
+
+        \resumeProjectHeading
+          {\href{https://github.com/remon-rakibul/AriSaf-ChatBot}{\textbf{\large{{AriSaf Chatbot}}} \href{https://github.com/remon-rakibul/AriSaf-ChatBot}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{GPT-3.5, Langchain, FaissDB, Streamlit, Python}}}{}
+          \vspace{-13pt}
+          % \hspace{1}
+          \resumeItemListStart
+            \resumeItem{\normalsize{A chatbot for the AriSaf Tech website using the knowledgebase from the site urls}}
+          \resumeItemListEnd 
+          \vspace{-18pt}
+
+        \resumeProjectHeading
+          {\href{https://github.com/remon-rakibul/real-estate-backend}{\textbf{\large{{RealEstate Backend}}} \href{https://github.com/remon-rakibul/real-estate-backend}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Django Rest Framework, Python}}}{}
+          % \hspace{1}
+          \vspace{-13pt}
+          \resumeItemListStart
+            \resumeItem{\normalsize{An API for the backend of a real estate website}}
+          \resumeItemListEnd 
+          \vspace{-18pt}
+
+
+        \resumeProjectHeading
+          {\href{https://github.com/remon-rakibul/books-recommender-system}{\textbf{\large{{Book Recommender System}}} \href{https://github.com/remon-rakibul/covid-19_django_app}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Numpy, Pandas, Machine Learning, Streamlit, Python}}}{}
+          \vspace{-13pt}
+          \resumeItemListStart
+          % \hspace{1pt}
+            \resumeItem{\normalsize{User can select a book name from a drop-down list}}
+            \resumeItem{\normalsize{Model will recommend 5 books}}
+
+            % \resumeItem
+            {\textcolor{accent} {\href{https://books-recommender-system-jad3vmkvta8qd8vc8bzzmm.streamlit.app/} {\underline{\normalsize{Live site here}}}}}
+          \resumeItemListEnd 
+          \vspace{-18pt}
+
+        \resumeProjectHeading
+          {\href{https://github.com/remon-rakibul/movie-dataset-2023}{\textbf{\large{{Movie Dataset 2023}}} \href{https://github.com/remon-rakibul/movie-dataset-2023}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Numpy, Pandas, Jupyter Notebook, Python}}}{}
+          \vspace{-13pt}
+          % \hspace{0.4}
+          \resumeItemListStart
+            \resumeItem{\normalsize{A dataset of all movies till 2023}}
+            \resumeItem{\normalsize{Can be used for EDA, Recommendation Systems, Data Analysis, etc..}}
+          \resumeItemListEnd 
+          \vspace{-18pt}
+
+          
+        \resumeProjectHeading
+          {\href{https://github.com/remon-rakibul/covid-19_django_app}{\textbf{\large{{Covid 19 Detector}}} \href{https://github.com/remon-rakibul/covid-19_django_app}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Deep Learning, Django, Python, Heroku, HTML, CSS}}}{}
+          \vspace{-13pt}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Given a chest X-ray image of a person the system will detect covid 19}}
+            \resumeItem{\normalsize{Model build and trained using Deep Learning architecture}}
+            \resumeItem{\normalsize{UI is build with python django framework}}
+
+            % \resumeItem{\textcolor{accent} {\href{http://covid19remon.herokuapp.com/} {\underline{\normalsize{Live site here}}}}}
+          \resumeItemListEnd 
+          \vspace{-18pt}
+          
+      % \resumeProjectHeading
+      %     {\href{ProjectLink.com}{\textbf{\large{{Image Resizer}}} \href{https://github.com/remon-rakibul/Image-Resizer}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Python}}}{}
+      %     \resumeItemListStart
+      %       \resumeItem{\normalsize{Resizes and renames all images of a given directory of a given height \& width}}
+      %       \resumeItem{\normalsize{Built with Python \& has a GUI built with TKinter}}
+      %       \resumeItem{\textcolor{accent} {\href{https://github.com/remon-rakibul/Image-Resizer} {\underline{\normalsize{Download}}}}}
+      %     \resumeItemListEnd
+      %     \vspace{-13pt}
+          
+      %     \resumeProjectHeading
+      %     {\href{}{\textbf{\large{{Jessore IT Park}}} \href{https://github.com/remon-rakibul/JassoreItPark}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Node JS, Express JS, Passport JS, MongoDB, Bootstrap, CSS, HTML}}}{}
+      %     \resumeItemListStart
+      %       \resumeItem{\normalsize{List diﬀerent companies with description \& their reviews} }
+            
+      %     \resumeItemListEnd 
+          
+    \resumeSubHeadingListEnd
+\vspace{-1pt}
+
+
+
+% -----------INVOLVEMENT---------------
+% \section{EXTRACURRICULAR}
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{EUB Data Science Club \href{Certificate Proof link}
+%         %{\raisebox{-0.1\height}\faExternalLink }
+%         }{04 2019 -- 01 2022}{\underline{President}}{Dhaka, Bangladesh}
+%             \resumeItemListStart
+%                 %\resumeItem{\normalsize{About the role \textbf{and responsibilities carried out.}}}
+%                 %\resumeItem{\normalsize{Participation Certificate. \href{ParticipationCertificateLink.com}{\raisebox{-0.1\height}\faExternalLink }}}
+%             \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+    
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{EUB Intra University ICT Carnival \href{Certificate Proof link}
+%         %{\raisebox{-0.1\height}\faExternalLink }
+%         }{}{\underline{Champion}}{}
+%             \resumeItemListStart
+%                 %\resumeItem{\normalsize{About the role \textbf{and responsibilities carried out.}}}
+%                 %\resumeItem{\normalsize{Participation Certificate. \href{ParticipationCertificateLink.com}{\raisebox{-0.1\height}\faExternalLink }}}
+%             \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+    
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{Facebook Developer Circle Dhaka \href{Certificate Proof link}
+%         %{\raisebox{-0.1\height}\faExternalLink }
+%         }{}{\underline{Member}}{}
+%             \resumeItemListStart
+%                 %\resumeItem{\normalsize{About the role \textbf{and responsibilities carried out.}}}
+%                 %\resumeItem{\normalsize{Participation Certificate. \href{ParticipationCertificateLink.com}{\raisebox{-0.1\height}\faExternalLink }}}
+%             \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+%  \vspace{-11pt}
+ 
+
+\end{document}

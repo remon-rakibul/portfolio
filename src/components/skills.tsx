@@ -53,22 +53,44 @@
 // export default Skills;
 
 const SkillCard = ({ skill }: { skill: string }) => (
-  <div className="flex items-center justify-center w-full h-24 bg-gray-800 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:bg-teal-600">
-    <p className="text-xl text-white font-semibold text-center">{skill}</p>
+  <div className="group flex h-24 w-full items-center justify-center rounded-xl bg-gradient-to-br from-gray-100/80 to-gray-200/80 dark:from-gray-800/50 dark:to-gray-900/50 backdrop-blur-sm ring-1 ring-gray-300 dark:ring-white/10 transition-all duration-300 hover:scale-105 hover:bg-gradient-to-br hover:from-teal-500/20 hover:to-cyan-500/20 hover:ring-teal-500/50 hover:shadow-lg hover:shadow-teal-500/20">
+    <p className="text-center text-base font-semibold text-gray-800 dark:text-white transition-colors group-hover:text-teal-600 dark:group-hover:text-teal-300 md:text-lg">
+      {skill}
+    </p>
   </div>
 );
 
 const Skills = () => {
   const skills = [
+    // Languages
+    "Python",
+    "JavaScript",
+    "SQL",
+    // Frontend
+    "HTML",
+    "CSS",
+    "Bootstrap",
+    "React",
+    // Backend
+    "Django Rest Framework",
+    "FastAPI",
+    // Database
+    "PostgreSQL",
+    "PGvector",
+    "Pinecone",
+    "ChromaDB",
+    "Supabase",
+    // Generative AI
+    "LangGraph",
     "Langchain",
     "CrewAI",
-    "Prompt Engineering",
-    "VectorDB",
+    "Agency-Swarm",
+    "RAG",
+    "Context Engineering",
+    // ML/DL
     "Scikit-learn",
     "Keras",
     "TensorFlow",
-    "Django Rest Framework",
-    "FastAPI",
     "NLTK",
     "spaCy",
     "OpenCV",
@@ -76,9 +98,11 @@ const Skills = () => {
     "Pandas",
     "Matplotlib",
     "Seaborn",
-    "CSS",
-    "Bootstrap",
+    // Developer Tools
     "Git",
+    "Docker",
+    "AWS EC2",
+    "Postman",
   ];
 
   return (

@@ -8,7 +8,13 @@ const TabContent = ({
   children: React.ReactNode;
 }) => {
   return (
-    <div className={`${isActive ? "block" : "hidden"} w-full text-white`}>
+    <div
+      className={`w-full text-white transition-all duration-300 ${
+        isActive
+          ? "block animate-fade-in"
+          : "hidden"
+      }`}
+    >
       {children}
     </div>
   );
