@@ -128,7 +128,6 @@ const Projects = () => {
     },
   ];
 
-  const projects = [...workProjects, ...openSourceProjects];
   return (
     <div className="space-y-12">
       {/* Work Projects Section */}
